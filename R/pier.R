@@ -26,7 +26,7 @@ pier <- function(data,
                  sortOrder = 'none', smallSegmentGrouping = FALSE,
                  settings = NULL, ...) {
 
-    stopifnot(all(c('label','value','color') %in% colnames(data)),
+    stopifnot(all(c('label','value') %in% colnames(data)),
               sortOrder %in% c('none','random',
                                'value-asc', 'value-desc',
                                'label- asc', 'label-desc')
